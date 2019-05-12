@@ -3,4 +3,4 @@ project(Algorithms)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithms main.cpp SubstringSearchEfficient.cpp)
+add_executable(Algorithms main.cpp BinaryManipulation.cpp)
