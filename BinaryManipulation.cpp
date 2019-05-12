@@ -8,15 +8,11 @@ unsigned long long closestIntSameWeight(const unsigned long long x)
     unsigned long long t;
     if (x & 1)
     {
-        t = (x ^ (x - 1)) ^ (x - 1);
-        t = ((t << 1) + 1) ^ (t >> 1);
-        return x ^ t;
+        return x ^ (((((x ^ (x - 1)) ^ (x - 1)) << 1) + 1) ^ (((x ^ (x - 1)) ^ (x - 1)) >> 1));
     }
     else
     {
-        t = x ^ (x - 1);
-        t = (((t << 1) + 1) - t) >> 1;
-        return (x - t + (t >> 1));
+        return (x - ( (((( x ^ (x - 1) ) << 1) + 1) - ( x ^ (x - 1) )) >> 1 ) + (( (((( x ^ (x - 1) ) << 1) + 1) - ( x ^ (x - 1) )) >> 1 ) >> 1));
     }
 }
 
