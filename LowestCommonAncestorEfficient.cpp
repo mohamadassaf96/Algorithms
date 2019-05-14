@@ -3,31 +3,29 @@
 #include <unordered_set>
 #include <vector>
 
-using namespace std;
-
 struct Node {
     int data;
-    shared_ptr<Node> right, left, parent;
+    std::shared_ptr<Node> right, left, parent;
 };
 
-void insertRight(const shared_ptr<Node>& node, const int& x){
-    shared_ptr<Node> new_node = make_shared<Node>();
+void insertRight(const std::shared_ptr<Node>& node, const int& x){
+    std::shared_ptr<Node> new_node = std::make_shared<Node>();
     new_node->data = x;
     node -> right = new_node;
     new_node->parent = node;
 }
 
-void insertLeft(const shared_ptr<Node>& node, const int& x){
-    shared_ptr<Node> new_node = make_shared<Node>();
+void insertLeft(const std::shared_ptr<Node>& node, const int& x){
+    std::shared_ptr<Node> new_node = std::make_shared<Node>();
     new_node->data = x;
     node -> left = new_node;
     new_node->parent = node;
 }
 
-Node* LCA(const shared_ptr<Node>& node1, const shared_ptr<Node>& node2){
-    unordered_set<shared_ptr<Node>> visited;
-    shared_ptr<Node> temp1 = node1;
-    shared_ptr<Node> temp2 = node2;
+Node* LCA(const std::shared_ptr<Node>& node1, const std::shared_ptr<Node>& node2){
+    std::unordered_set<std::shared_ptr<Node>> visited;
+    std::shared_ptr<Node> temp1 = node1;
+    std::shared_ptr<Node> temp2 = node2;
 
     while(true){
         temp1 = temp1->parent ? temp1->parent : temp1;
