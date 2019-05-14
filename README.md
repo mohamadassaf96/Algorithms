@@ -15,6 +15,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
     * unsigned long long swap_bits(unsigned long long x, const int i, const int j): Swaps the ith and jth bits of x.
 * IntervalsUnion.cpp: Given a set of intervals (with endpoints being either open or closed), finds their union. O(nlogn) time and O(1) space where n is the number of intervals.
 * checkBST.cpp: Give the root of a binary tree, checks if the tree satisfies the BST property.
+* hasCycle.cpp: Given a linked list, checks if it has a cycle. O(n) time and O(1) space.
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.
