@@ -22,8 +22,7 @@ Indices SubstringSearch(const std::vector<std::string>& sentence, const std::vec
             }
         }
         if (temp.size() == hashset.size()){
-            i == j ? j++ : i = j;
-            i = j;
+            i = i==j ? ++j : j;
         }
         else if (temp.empty()){
             if ((j - i) < (result.end - result.start)){
