@@ -2,7 +2,7 @@
 #include<vector>
 #include <algorithm>
 
-std::unordered_set<int> IntersectionOfTwoSortedArrays(const std::vector<int>& A, const std::vector<int>& B){
+std::unordered_set<int> intersectionOfTwoSortedArrays(const std::vector<int>& A, const std::vector<int>& B){
     std::unordered_set<int> result;
     if  (((A.size()/B.size())<1.1) && ((A.size()/B.size())>0.9)){
         int i = 0, j = 0;

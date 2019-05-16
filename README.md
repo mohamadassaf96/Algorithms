@@ -9,7 +9,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * InOrderIt.cpp: Iterative implementation of in order traversal of a binary tree given that nodes have a pointer to their parent.
 * IntersectionOfTwoSortedArrays.cpp: Given 2 sorted arrays, return a set containing the common elements.
 * BinaryManipulation.cpp: Contains various problems solved in O(1).
-    * unsigned long long closestIntSameWeight(const unsigned long long x): Define the weight of an integer as the number of 1's it has in its binary representation. Given an integer, the following function finds the closest integer to it having the same weight.
+    * unsigned long long closestIntSameWeight(const unsigned long long x): Define the weight of an integer as the number of 1's it has in its binary representation. Given an integer, the function finds the closest integer to it having the same weight.
     * bool testIfPow2(unsigned long long x): returns true if x is a power of 2.
     * unsigned long long modPower2(const unsigned long long x, const int p): returns x mod 2^p.
     * unsigned long long swapBits(unsigned long long x, const int i, const int j): Swaps the ith and jth bits of x.
@@ -17,6 +17,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * checkBST.cpp: Give the root of a binary tree, checks if the tree satisfies the BST property.
 * hasCycle.cpp: Given a linked list, checks if it has a cycle. O(n) time and O(1) space.
 * PreorderToBST.cpp: Given Preorder traversal data of a BST, reconstructs it. O(n) time O(h) space.
+* SortedArrayToMinBST.cpp: Given a sorted array, builds the minimum height BST. O(n) time, O(logn) space.
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.

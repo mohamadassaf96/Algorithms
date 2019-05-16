@@ -10,9 +10,7 @@ template <typename T>
 void insertAfterTail(const std::shared_ptr<LNode<T>>& head, const T& data){
     std::shared_ptr<LNode<T>> temp = head;
     while (temp->next) temp = temp->next;
-    std::shared_ptr<LNode<T>> new_node = std::make_shared<LNode<T>>();
-    new_node->data = data;
-    temp->next = new_node;
+    temp->next = std::make_shared<LNode<T>>(LNode{data, nullptr});
 }
 
 template <typename T>

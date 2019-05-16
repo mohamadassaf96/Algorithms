@@ -5,21 +5,15 @@
 
 struct Node {
     int data;
-    std::shared_ptr<Node> right, left, parent;
+    std::shared_ptr<Node> left, right, parent;
 };
 
-void insertRight(const std::shared_ptr<Node>& node, const int& x){
-    std::shared_ptr<Node> new_node = std::make_shared<Node>();
-    new_node->data = x;
-    node -> right = new_node;
-    new_node->parent = node;
+void insertRight(const std::shared_ptr<BTNode<int>>& node, const int& x){
+    node -> right = std::make_shared<BTNode<int>>(BTNode<int>{x, nullptr, nullptr, node});
 }
 
-void insertLeft(const std::shared_ptr<Node>& node, const int& x){
-    std::shared_ptr<Node> new_node = std::make_shared<Node>();
-    new_node->data = x;
-    node -> left = new_node;
-    new_node->parent = node;
+void insertLeft(const std::shared_ptr<BTNode<int>>& node, const int& x){
+    node -> left = std::make_shared<BTNode<int>>(BTNode<int>{x, nullptr, nullptr, node});
 }
 
 Node* LCA(const std::shared_ptr<Node>& node1, const std::shared_ptr<Node>& node2){
