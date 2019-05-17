@@ -18,6 +18,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * hasCycle.cpp: Given a linked list, checks if it has a cycle. O(n) time and O(1) space.
 * PreorderToBST.cpp: Given Preorder traversal data of a BST, reconstructs it. O(n) time O(h) space.
 * SortedArrayToMinBST.cpp: Given a sorted array, builds the minimum height BST. O(n) time, O(logn) space.
+* CyclicSortedArray.cpp: Given a cyclic sorted array (Array that can be made sorted by shifting), finds the required shift amount. O(logn) time O(1) space.
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.
