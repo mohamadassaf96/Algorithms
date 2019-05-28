@@ -20,6 +20,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * SortedArrayToMinBST.cpp: Given a sorted array, builds the minimum height BST. O(n) time, O(logn) space.
 * CyclicSortedArray.cpp: Given a cyclic sorted array (Array that can be made sorted by shifting), finds the required shift amount. O(logn) time O(1) space.
 * HeapMaxK.cpp: Given an array representation of a heap, find the maximum k elements without modifying the array. O(k logk) time, O(k) space.
+* MaxQueue.cpp: Implementation of a queue with a max() operation. Max is returned in O(1), insertion worst case is O(n).
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.
