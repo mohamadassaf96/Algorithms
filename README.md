@@ -22,6 +22,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * HeapMaxK.cpp: Given an array representation of a heap, find the maximum k elements without modifying the array. O(k logk) time, O(k) space.
 * MaxQueue.cpp: Implementation of a queue with a max() operation. Max is returned in O(1), insertion worst case is O(n).
 * MaxKElements.cpp: Given an array of integers, and an integer k, finds the maximum k elements in the array. O(nlogk).
+* KthLargest.cpp: Given an array of integers, and an integer k, finds the kth largest element. Average case is O(n) and worst case is O(n^2). The complexity analysis here is similar to quicksort's.
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.
