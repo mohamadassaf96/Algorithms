@@ -26,7 +26,9 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * BTExterior.cpp: Given a binary tree, computes its exterior. O(n) time complexity, O(h) space complexity.
 * PowerSet.cpp: Given a set represented as a vector, returns its power set. O(n2^n) time, O(n) space.
 * RemovekthLast.cpp: Given a list, and an integer k, removes the kth last element. One pass across the list, no space overhead.
+* NodesSameDepth.cpp: Given a binary tree, returns a hashmap containing nodes grouped by depth. O(n) time, O(1) space.
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.
 * Every cpp file has its own implementation of the data structure if needed.
+* Only auxiliary space complexity is counted --space necessary to return the output is not.
