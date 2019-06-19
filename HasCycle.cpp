@@ -8,16 +8,16 @@ struct LNode {
 
 template <typename T>
 void insertAfterTail(const std::shared_ptr<LNode<T>>& head, const T& data){
-    std::shared_ptr<LNode<T>> temp = head;
-    while (temp->next) temp = temp->next;
-    temp->next = std::make_shared<LNode<T>>(LNode<T>{data, nullptr});
+    std::shared_ptr<LNode<T>> _head = head;
+    while (_head->next) _head = _head->next;
+    _head->next = std::make_shared<LNode<T>>(LNode<T>{data, nullptr});
 }
 
 template <typename T>
 void insertAfterTail(const std::shared_ptr<LNode<T>>& head, const std::shared_ptr<LNode<T>>& new_node){
-    std::shared_ptr<LNode<T>> temp = head;
-    while (temp->next) temp = temp->next;
-    temp->next = new_node;
+    std::shared_ptr<LNode<T>> _head = head;
+    while (_head->next) _head = _head->next;
+    _head->next = new_node;
 }
 
 template <typename T>

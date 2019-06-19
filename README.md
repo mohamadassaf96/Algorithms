@@ -27,6 +27,7 @@ Finds the lowest common ancestor of 2 nodes in a binary tree in O(distance from 
 * PowerSet.cpp: Given a set represented as a vector, returns its power set. O(n2^n) time, O(n) space.
 * RemovekthLast.cpp: Given a list, and an integer k, removes the kth last element. One pass across the list, no space overhead.
 * NodesSameDepth.cpp: Given a binary tree, returns a hashmap containing nodes grouped by depth. O(n) time, O(1) space.
+* IsLetterConstructible.cpp: Given 2 strings, letter and magazine, decide whether letter is constructible. a letter is constructible if every character in letter appears in magazine more than it does in letter. O(n+m) time and O(max(n,m)) space, where n is size(letter) and m is size(magazine).
 
 # Notes
 * In all functions, I assumed valid input --checking is not necessary.

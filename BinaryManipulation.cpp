@@ -32,12 +32,10 @@ unsigned long long modPower2(const unsigned long long x, const int p)
 // Given an integer x, the following function swaps the ith and jth bits, in O(1).
 unsigned long long swapBits(unsigned long long x, const int i, const int j)
 {
-
     if (((x >> i) & 1) != ((x >> j) & 1))
     {
         x ^= (unsigned long long)pow(2, i);
         x ^= (unsigned long long)pow(2, j);
     }
-
     return x;
 }
